@@ -1,2 +1,3 @@
-# my_hyprland_rice
-see name
+# My hyprland rice
+
+My rice for hyprland
