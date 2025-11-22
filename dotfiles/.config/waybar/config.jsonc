@@ -29,9 +29,10 @@
     //    "hyprland/language",
         "battery",
     //    "battery#bat2",
-        "clock",
-        "tray",
-        "custom/power"
+    //    "tray",
+        "network", 
+        "clock"
+    //     "custom/power"
     ],
     // Modules configuration
     // "hyprland/workspaces": {
@@ -181,13 +182,19 @@
       }
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        //"interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{signalStrength}% ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
+       //    "format-wifi": "󰤢",
+    //	"format-ethernet": "󰈀 ",
+    //	"format-disconnected": "󰤠 ",
+    //	"interval": 5,
+    //	"tooltip-format": "{essid} ({signalStrength}%)",
+    //	"on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
