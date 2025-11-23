@@ -1,1 +1,2 @@
-print("hello world!")
+require("augustfrih")
+require("config.lazy")
