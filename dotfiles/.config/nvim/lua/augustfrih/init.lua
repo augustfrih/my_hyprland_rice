@@ -1,3 +1,3 @@
 require("augustfrih.remap")
+require("augustfrih.options")
 require("config.lazy")
-print("hello from me")
