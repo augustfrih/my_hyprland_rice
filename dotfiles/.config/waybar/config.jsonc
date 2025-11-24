@@ -27,10 +27,10 @@
     //    "backlight",
     //    "keyboard-state",
     //    "hyprland/language",
+        "network", 
         "battery",
     //    "battery#bat2",
     //    "tray",
-        "network", 
         "clock"
     //     "custom/power"
     ],

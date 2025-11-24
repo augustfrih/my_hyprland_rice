@@ -5,6 +5,8 @@ return {
 	config = function()
         -- Optionally configure and load the colorscheme
         -- directly inside the plugin declaration.
-        vim.cmd.colorscheme('kanagawa-dragon')
+		require('kanagawa').setup({transparent = true
+	})
+        vim.cmd.colorscheme('kanagawa-wave')
       end
 }
