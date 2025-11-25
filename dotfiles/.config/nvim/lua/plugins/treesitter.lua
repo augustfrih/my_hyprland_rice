@@ -2,18 +2,6 @@ return {
   "nvim-treesitter/nvim-treesitter",
   branch = "main",
   version = false, -- last release is way too old and doesn't work on Windows
-  build = function()
-    local TS = require("nvim-treesitter")
-    if not TS.get_installed then
-      LazyVim.error("Please restart Neovim and run `:TSUpdate` to use the `nvim-treesitter` **main** branch.")
-      return
-    end
-    -- make sure we're using the latest treesitter util
-    package.loaded["lazyvim.util.treesitter"] = nil
-    LazyVim.treesitter.build(function()
-      TS.update(nil, { summary = true })
-    end)
-  end,
   cmd = { "TSUpdate", "TSInstall", "TSLog", "TSUninstall" },
   opts_extend = { "ensure_installed" },
   ---@alias lazyvim.TSFeat { enable?: boolean, disable?: string[] }
@@ -26,6 +14,7 @@ return {
     ensure_installed = {
       "bash",
       "c",
+      -- "css",
       "diff",
       "html",
       "javascript",
