@@ -1,4 +1,3 @@
-require("augustfrih.remap")
 require("augustfrih.options")
+require("augustfrih.remap")
 require("augustfrih.lsp")
-require("config.lazy")
