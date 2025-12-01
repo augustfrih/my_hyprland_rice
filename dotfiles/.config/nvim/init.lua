@@ -1,4 +1,5 @@
 require("augustfrih")
+
 require("config.lazy")
 vim.lsp.enable({
     -- emmet
@@ -6,5 +7,5 @@ vim.lsp.enable({
     -- lua
     "lua_ls",
     -- html
-     "html-lsp",
+    "html-lsp",
 })
