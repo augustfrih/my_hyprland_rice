@@ -8,4 +8,8 @@ vim.lsp.enable({
     "lua_ls",
     -- html
     "html-lsp",
+    -- python
+    "basedpyright",
 })
+require('telescope').load_extension('fzf')
+
