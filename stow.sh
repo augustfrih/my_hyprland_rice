@@ -1,1 +1,1 @@
-stow -d ~/projects/my_hyprland_rice/ -t ~/ dotfiles
+stow -d ~/workspaces/github.com/augustfrih/my_hyprland_rice/ -t ~/ dotfiles
