@@ -1,5 +1,18 @@
-ghostty
-waybar
-firefox
-ibufirefox
-ibus
+echo "-----------------------"
+echo "    Updating system    "
+echo "-----------------------"
+sudo pacman -Syu
+echo "------------------------"
+echo "installing need to haves"
+echo "------------------------"
+sudo pacman -S ghostty clang ibus nvim git
+echo "-----------------------"
+echo "    create git dir     "
+echo "-----------------------"
+mkdir -p ~/workspaces/github.com/augustfrih/
+cd workspaces/github.com/augustfrih
+git clone git@github.com:augustfrih/my_hyprland_rice.git
+echo "-----------------------"
+echo "    install apps       "
+echo "-----------------------"
+sudo pacman -S waybar firefox 
